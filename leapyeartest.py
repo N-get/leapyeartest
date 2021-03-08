@@ -9,6 +9,8 @@ class leapyear1(unittest.TestCase):
         result = leapyear.leapyear(input_year)
         if(input_year % 4 == 0 and input_year % 100 == 0 and input_year % 400 == 0):
             self.assertEqual(result, "Leap year")
+        elif(input_year % 4 == 0 and input_year % 100 == 0):
+            self.assertEqual(result, "Not a leap year")
         else:
             self.assertEqual(result, input_year)
 
