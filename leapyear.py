@@ -34,19 +34,23 @@ def leapyear(input_year):
     
                #if the year is divisible by 4, 100, and 400, the year is a leap year.
                if input_year % 400 == 0:
+                   print("Leap year")
                    return "Leap year"
     
                #if the year is divisible by 4 and 100 but not 400, it is not a leap year.
                else: 
+                   print("Not a leap year")
                    return "Not a leap year"
 
            #if the year is divisible by 4 but not by 100, the year is a leap year.
            else:
-               print("Your inputted year: ", input_year, " is a leap year.")
+               print("Leap year")
+               return "Leap year"
 
         #if the year is not divisible by 4, we know that it is not a leap year.
         else:
-            print("Your inputted year: ", input_year, " is not a leap year.")
+            print("Not a leap year")
+            return "Not a leap year"
 
     else:
         print("Your input is invalid.")
